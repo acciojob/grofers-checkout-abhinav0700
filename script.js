@@ -13,10 +13,10 @@ const getSum = () => {
   }
 
   // Create or update a paragraph to display the total
-  let totalElement = document.getElementById("total");
+  let totalElement = document.getElementById("ans");
   if (!totalElement) {
     totalElement = document.createElement("p");
-    totalElement.id = "total";
+    totalElement.id = "ans";
     document.body.appendChild(totalElement);
   }
   totalElement.innerText = `Total Price: ₹${sum.toFixed(2)}`;
